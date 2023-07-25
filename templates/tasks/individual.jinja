@@ -1,0 +1,10 @@
+{% extends 'base.jinja' %}
+{% block content %}
+    
+<div>
+<h1>{{ task.description }} ({{ task.duration }})</h1>
+<h4>{{ task.user.first_name }} {{ task.user.last_name }}</h4>
+<a href="/tasks/{{ task.id }}/edit">Edit</a>
+</div>
+
+{% endblock content %}
